@@ -45,6 +45,9 @@
     2021-12-28 17:33:23.708  INFO [api-gateway,,] 8862 - [ctor-http-nio-2] reactor.netty.http.server.AccessLog      : 127.0.0.1 - - [28/Dec/2021:17:33:23 -0500] "POST /api/v1/customers HTTP/1.1" 200 0 325
                                               ^
     Example: Missing Trace and Span ID here __|
+
+    To enable netty access log you have to add the following to the VM option in the edit configuration:
+    -Dreactor.netty.http.server.accessLogEnabled=true
 -->
     </dependencies>
 </project>
